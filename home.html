@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .product {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+            color: #fdfef7;
+        }
+
+        .arrow-left {
+            left: 10px;
+        }
+
+        .arrow-right {
+            right: 10px;
+        }
+
+        .custom-select {
+            position: relative;
+            display: inline-block;
+        }
+
+        .select-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+            padding: 0 10px;
+        }
+
+        .custom-dropdown {
+            position: relative;
+            display: inline-block;
+            background-color: green;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            padding-right: 30px;
+            /* Adjust as needed */
+            margin-left: 80%;
+        }
+
+        .dropdown-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #000;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .custom-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .scs {
+            display: flex;
+            align-items: center;
+        }
+
+      
+
+        .product {
+            background-color: #a3b008;
+            padding: 30px;
+            margin: 70px;
+            margin-right: 50000%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border: 4px solid #a3b008; /* Ajout de la bordure */
+            box-sizing: border-box;
+            
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arrow {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: #f2f2f2;
+            }
+        }
+
+        .arrow svg {
+            margin: auto;
+        }
+
+        .arrow-left svg {
+            /* transform: rotate(-180deg); */
+        }
+
+        .arrow-right svg {
+            /* transform: rotate(-180deg); */
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        body {
+            width: 100%;
+            height: auto;
+            background-image: url("Untitled design.png");
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+
+            text-decoration: none;
+
+        }
+
+        header .login {
+            display: flex;
+            flex-direction: line;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 10px 10px;
+        }
+
+        .texte-container {
+            padding: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+      
+    
+    </style>
+    <title>Home</title>
+</head>
+
+<body>
+    <header classe="header">
+        <div class="logo">
+            <img src="logo.png" alt="oxfam" style="width: 100px;">
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Our Products</a>
+            <a href="#" style="background-color: #a3b008; padding: 12px;border-radius: 3px;">Our Products</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="login">
+            <a href="#">login</a>
+            <img src="search-icon-65e1b58b93ff3799741027.png" alt="oxfam" style="width: 16px; height:16px ;">
+        </div>
+
+    </header>
+    <div class="custom-dropdown">
+        <span class="dropdown-icon"><i class="fas fa-list-alt"></i></span>
+        <select id="cars" name="cars">
+            <option value="">Category</option>
+            <option value="product1">Product 1</option>
+            <option value="product2">Product 2</option>
+            <!-- Add more options as needed -->
+        </select>
+    </div>
+    <div class="scs"></div>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="product">
+                <img src="images\Huiles cosmétiques\222.jpg" alt="Product 1">
+                <div class="product-info">
+                    <p>Description for Product 1</p>
+                    <p>Description for Product 1</p><br>
+                    <h1>Huile d'Olive Extra Vierge</h1><br>
+                    <section class="texte-container">
+                        <h2>Huile d'olive extra vierge ultra premium</h2>
+
+                        <p>
+                            <a href="#">En savoir plus</a>
+                        </p>
+                    </section>
+                </div>
+           
+            </div>
+            <div class="product">
+                <img src="images\Huiles cosmétiques\2.png" alt="Product 2">
+                <div class="product-info">
+                    <p class="product-description">Description for Product 2</p>
+                </div>
+            </div>
+            <!-- Add more product items as needed -->
+        </div>
+        <div class="navigation">
+            <a href="#">
+                <div class="arrow arrow-right">
+                    <svg fill="" viewBox="-102.4 -102.4 1228.80 1228.80" xmlns="http://www.w3.org/2000/svg" stroke=""
+                        transform="rotate(180)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0">
+                            <rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="614.4" fill="#A3B008"
+                                strokewidth="0"></rect>
+                        </g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M604.7 759.2l61.8-61.8L481.1 512l185.4-185.4-61.8-61.8L357.5 512z"></path>
+                        </g>
+                    </svg>
+
+                </div>
+            </a>
+            <a href="#">
+                <div class="arrow arrow-left">
+                    <svg fill="#000000" viewBox="-102.4 -102.4 1228.80 1228.80" xmlns="http://www.w3.org/2000/svg"
+                        transform="rotate(0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0">
+                            <rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="614.4" fill="#f0f3f4"
+                                strokewidth="0"></rect>
+                        </g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M604.7 759.2l61.8-61.8L481.1 512l185.4-185.4-61.8-61.8L357.5 512z"></path>
+                        </g>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const arrowLeft = document.querySelector('.arrow-left');
+        const arrowRight = document.querySelector('.arrow-right');
+        const selectCars = document.getElementById('cars');
+
+        let currentIndex = 0;
+
+        arrowLeft.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        });
+
+        arrowRight.addEventListener('click', () => {
+            const maxIndex = slider.children.length - 1;
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateSlider();
+            }
+        });
+
+        selectCars.addEventListener('change', () => {
+            // Map the selected option value to the corresponding index in the slider
+            currentIndex = selectCars.selectedIndex;
+            updateSlider();
+        });
+
+        function updateSlider() {
+            const translateValue = -currentIndex * 100 + '%';
+            slider.style.transform = 'translateX(' + translateValue + ')';
+        }
+    </script>
+</body>
+
+</html>
