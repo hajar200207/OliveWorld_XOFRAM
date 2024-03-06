@@ -45,7 +45,7 @@
             display: inline-block;
             background-color:white;
             color: white;
-            padding: 5px 70px;
+            padding: 5px 25px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -102,7 +102,8 @@
             gap: 20px;
             flex: 0 0 100%;
             box-sizing: border-box;
-            padding: 20px;
+            padding: 50px;
+            
     
             
         }
@@ -197,21 +198,20 @@
             background-color: #353909;
             opacity: 70%;
             border:none ; 
-             padding: 7px;
+            padding: 7px;
+            gap: 20px;
+            border-radius: 7px;
+            border: 2px solid #FFD700;
         }
+       
+        .ff:hover {background-color:#CCDB19;}
         .f{
             display: flex;
-            background-color:#fff;
-            opacity: 70%;
-            border:none ; 
-            padding: 7px;
-            color: #a3b008;
-            
-            
+            flex-direction: row;
+            gap: 20px;
         }
-        
-      
     
+
     </style>
     <title>Home</title>
 </head>
@@ -238,40 +238,126 @@
         <span class="dropdown-icon"><i class="fa fa-bars"></i></i></span>
         <div  class ="f">
           
-        <select  id="cars" name="cars" style="border: none;color: #a3b008; " > 
-            <option  value="" style="color: #a3b008;"> CATEGORIE</option>
-            <option value="product1" style="color: #a3b008;">Product 1</option>
-            <option value="product2" style="color: #a3b008;">Product 2</option>
+        <select  id="cars" name="cars" style="border: none;color: #a3b008;font-size: 20px; " > 
+         
+            <option  value="1" style="color: #a3b008;font-size: 20px;"> CATEGORIE</option>
+            <option  value="huiles" style="color: #a3b008 ;font-size: 20px; "> Huiles produit 1</option>
+            <option  value="huiles" style="color: #a3b008;font-size: 20px;">Huiles produit 2</option>
+            <option  value="olive" style="color: #a3b008;font-size: 20px;"> olive produit 1</option>
+            <option  value="olive" style="color: #a3b008;font-size: 20px;">olive produit 2 </option>
+            <option  value="zitoun" style="color: #a3b008;font-size: 20px;"> zitoun produit 1</option>
+            <option  value="zitoun" style="color: #a3b008;font-size: 20px;"> zitoun produit 2</option>
             <!-- Add more options as needed -->
 
         </select>
     </div>
     </div>
     <div class="scs"></div>
-    <div class="slider-container">
-        <div class="slider">
-            <div class="product">
-                <img src="images\Huiles cosmétiques\222.jpg" alt="Product 1">
-                <div class="product-info">
-                    <p style="color: #CCDB19;">Description for Product 1</p>
-                    <p style="color: #CCDB19;">Description for Product 1</p><br>
-                    <h1 style="color: #fff;">Huile d'Olive Extra Vierge</h1><br>
-                       <button  class="ff">
-                            <a  href="#" >EN savoir plus</a>
-                        </button>
-                       
-                </div>
-           
+<div class="slider-container">
+    <div class="slider" id="productSlider">
+        <div class="product">
+            <div class="product-info">
+                <p style="color: #CCDB19;">Description for tous les produits </p>
+                <p style="color: #CCDB19;">There are three categories  oils zitouns and ovils </p><br>
+                <h1 style="color: #fff;">Welcome to xofram company</h1><br>
+                <dix class="f">
+                
+                </dix>
             </div>
-            <div class="product">
-                <img src="images\Huiles cosmétiques\2.png" alt="Product 2">
-                <div class="product-info">
-                    <p class="product-description">Description for Product 2</p>
-                </div>
-            </div>
-            <!-- Add more product items as needed -->
         </div>
+        <!--  additional products for "Huiles cosmétiques" -->
+        <div class="product">
+            <img src="images\Huiles cosmétiques\222.jpg" alt="Product 1">
+            <div class="product-info">
+                <p style="color: #CCDB19;">Description for Product 1</p>
+                <p style="color: #CCDB19;">Description for Product 1</p><br>
+                <h1 style="color: #fff;">Huile d'Olive Extra Vierge</h1><br>
+                <button class="ff">
+                    <a href="#">commander</a>
+                </button>
+                <button class="ff">
+                    <a href="#">disponnible</a>
+                </button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images\Huiles cosmétiques\2.png" alt="Product 2">
+            <div class="product-info">
+                <p style="color: #CCDB19;">Description for Product 1</p>
+                <p style="color: #CCDB19;">Description for Product 1</p><br>
+                <h1 style="color: #fff;">Huile d'Olive Extra Vierge</h1><br>
+                <button class="ff">
+                    <a href="#">commander</a>
+                </button>
+                <button class="ff">
+                    <a href="#">disponnible</a>
+                </button>
+            </div>
+        </div>
+
+<!-- additional products for "olive" -->
+        <div class="product">
+            <img src="images\olive\44.jpg" alt="Product 1">
+            <div class="product-info">
+                <p style="color: #CCDB19;">additional products for olive</p>
+                <p style="color: #CCDB19;">additional products for "olive</p><br>
+                <h1 style="color: #fff;">additional products for "olive</h1><br>
+                <button class="ff">
+                    <a href="#">commander</a>
+                </button>
+                <button class="ff">
+                    <a href="#">disponnible</a>
+                </button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images\olive\prod_1526649942.webp" alt="Product 2">
+            <div class="product-info">
+                <p style="color: #CCDB19;">additional products for "olive</p>
+                <p style="color: #CCDB19;">additional products for "olive</p><br>
+                <h1 style="color: #fff;">additional products for "olive/h1><br>
+                    <button class="ff">
+                        <a href="#">commander</a>
+                    </button>
+                    <button class="ff">
+                        <a href="#">disponnible</a>
+                    </button>
+            </div>
+        </div>
+        <!-- additional products for zitoun  -->
+        <div class="product">
+            <img src="images\zitoun\olive-verte-denoyaute.jpg" alt="Product 1">
+            <div class="product-info">
+                <p style="color: #CCDB19;">additional products for zitoun </p>
+                <p style="color: #CCDB19;">additional products for zitoun </p><br>
+                <h1 style="color: #fff;">Hadditional products for zitoun </h1><br>
+                <button class="ff">
+                    <a href="#">commander</a>
+                </button>
+                <button class="ff">
+                    <a href="#">disponnible</a>
+                </button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images\zitoun\olives-noir-denoyautees.jpg" alt="Product 2">
+            <div class="product-info">
+                <p style="color: #CCDB19;">additional products for zitoun </p>
+                <p style="color: #CCDB19;">additional products for zitoun </p><br>
+                <h1 style="color: #fff;">additional products for zitoun </h1><br>
+                <button class="ff">
+                    <a href="#">commander</a>
+                </button>
+                <button class="ff">
+                    <a href="#">disponnible</a>
+                </button>
+            </div>
+        </div>
+        <!--_______________________________________________ -->
+        
     </div>
+</div>
+
         <div class="navigation">
             <a href="#">
                 <div class="arrow arrow-right">
@@ -310,37 +396,56 @@
 
     <script>
         const slider = document.querySelector('.slider');
-        const arrowLeft = document.querySelector('.arrow-left');
-        const arrowRight = document.querySelector('.arrow-right');
-        const selectCars = document.getElementById('cars');
+const arrowLeft = document.querySelector('.arrow-left');
+const arrowRight = document.querySelector('.arrow-right');
+const selectCars = document.getElementById('cars');
+let currentIndex = 0;
+let timer;
 
-        let currentIndex = 0;
+// Function to start the automatic slider
+function startSlider() {
+    timer = setInterval(() => {
+        currentIndex = (currentIndex + 1) % slider.children.length;
+        updateSlider();
+    }, 3000); // Change 3000 to the desired interval in milliseconds (3 seconds in this case)
+}
 
-        arrowLeft.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateSlider();
-            }
-        });
+// Function to stop the automatic slider
+function stopSlider() {
+    clearInterval(timer);
+}
 
-        arrowRight.addEventListener('click', () => {
-            const maxIndex = slider.children.length - 1;
-            if (currentIndex < maxIndex) {
-                currentIndex++;
-                updateSlider();
-            }
-        });
+// Event listener for left arrow
+arrowLeft.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
+    updateSlider();
+    stopSlider(); // Stop the automatic slider when arrow is clicked
+});
 
-        selectCars.addEventListener('change', () => {
-            // Map the selected option value to the corresponding index in the slider
-            currentIndex = selectCars.selectedIndex;
-            updateSlider();
-        });
+// Event listener for right arrow
+arrowRight.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slider.children.length;
+    updateSlider();
+    stopSlider(); // Stop the automatic slider when arrow is clicked
+});
 
-        function updateSlider() {
-            const translateValue = -currentIndex * 100 + '%';
-            slider.style.transform = 'translateX(' + translateValue + ')';
-        }
+// Event listener for car selection
+selectCars.addEventListener('change', () => {
+    currentIndex = selectCars.selectedIndex;
+    updateSlider();
+    stopSlider(); // Stop the automatic slider when car is selected
+});
+
+// Function to update the slider
+function updateSlider() {
+    const translateValue = -currentIndex * 100 + '%';
+    slider.style.transform = 'translateX(' + translateValue + ')';
+}
+
+// Start the automatic slider
+startSlider();
+
+
     </script>
 </body>
 
