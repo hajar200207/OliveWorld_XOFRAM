@@ -19,12 +19,7 @@
             transition: transform 0.5s ease-in-out;
         }
 
-        .product {
-            flex: 0 0 100%;
-            box-sizing: border-box;
-            padding: 20px;
-            text-align: center;
-        }
+     
 
         .arrow {
             position: absolute;
@@ -43,28 +38,14 @@
             right: 10px;
         }
 
-        .custom-select {
-            position: relative;
-            display: inline-block;
-        }
-
-        .select-icon {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            pointer-events: none;
-            padding: 0 10px;
-        }
+      
 
         .custom-dropdown {
             position: relative;
             display: inline-block;
-            background-color: green;
+            background-color:white;
             color: white;
-            padding: 15px 32px;
+            padding: 5px 70px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -73,8 +54,11 @@
             cursor: pointer;
             border: none;
             padding-right: 30px;
-            /* Adjust as needed */
             margin-left: 80%;
+            border-radius: 3px;
+           border: 1px solid #FFD700;
+            width: 202PX;
+           
         }
 
         .dropdown-icon {
@@ -103,25 +87,23 @@
             cursor: pointer;
         }
 
-        .scs {
-            display: flex;
-            align-items: center;
-        }
 
       
 
         .product {
-            background-color: #a3b008;
-            padding: 30px;
-            margin: 70px;
-            margin-right: 50000%;
+            background:rgba(163, 176, 8, 0.6);
+            border-radius: 7px;
+            border: 2px solid #FFD700;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: left;
             gap: 20px;
-            border: 4px solid #a3b008; /* Ajout de la bordure */
+            flex: 0 0 100%;
             box-sizing: border-box;
+            padding: 20px;
+    
             
         }
 
@@ -144,9 +126,7 @@
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
             transition: all 0.2s ease-in-out;
 
-            &:hover {
-                background-color: #f2f2f2;
-            }
+           
         }
 
         .arrow svg {
@@ -212,12 +192,24 @@
         p {
             margin-bottom: 10px;
         }
-
-        a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
+        
+        .ff{
+            background-color: #353909;
+            opacity: 70%;
+            border:none ; 
+             padding: 7px;
         }
+        .f{
+            display: flex;
+            background-color:#fff;
+            opacity: 70%;
+            border:none ; 
+            padding: 7px;
+            color: #a3b008;
+            
+            
+        }
+        
       
     
     </style>
@@ -232,7 +224,7 @@
         <div class="menu">
             <a href="#">Home</a>
             <a href="#">Services</a>
-            <a href="#">Our Products</a>
+            <a href="#">About us</a>
             <a href="#" style="background-color: #a3b008; padding: 12px;border-radius: 3px;">Our Products</a>
             <a href="#">Contact us</a>
         </div>
@@ -240,16 +232,20 @@
             <a href="#">login</a>
             <img src="search-icon-65e1b58b93ff3799741027.png" alt="oxfam" style="width: 16px; height:16px ;">
         </div>
-
     </header>
+
     <div class="custom-dropdown">
-        <span class="dropdown-icon"><i class="fas fa-list-alt"></i></span>
-        <select id="cars" name="cars">
-            <option value="">Category</option>
-            <option value="product1">Product 1</option>
-            <option value="product2">Product 2</option>
+        <span class="dropdown-icon"><i class="fa fa-bars"></i></i></span>
+        <div  class ="f">
+          
+        <select  id="cars" name="cars" style="border: none;color: #a3b008; " > 
+            <option  value="" style="color: #a3b008;"> CATEGORIE</option>
+            <option value="product1" style="color: #a3b008;">Product 1</option>
+            <option value="product2" style="color: #a3b008;">Product 2</option>
             <!-- Add more options as needed -->
+
         </select>
+    </div>
     </div>
     <div class="scs"></div>
     <div class="slider-container">
@@ -257,16 +253,13 @@
             <div class="product">
                 <img src="images\Huiles cosmétiques\222.jpg" alt="Product 1">
                 <div class="product-info">
-                    <p>Description for Product 1</p>
-                    <p>Description for Product 1</p><br>
-                    <h1>Huile d'Olive Extra Vierge</h1><br>
-                    <section class="texte-container">
-                        <h2>Huile d'olive extra vierge ultra premium</h2>
-
-                        <p>
-                            <a href="#">En savoir plus</a>
-                        </p>
-                    </section>
+                    <p style="color: #CCDB19;">Description for Product 1</p>
+                    <p style="color: #CCDB19;">Description for Product 1</p><br>
+                    <h1 style="color: #fff;">Huile d'Olive Extra Vierge</h1><br>
+                       <button  class="ff">
+                            <a  href="#" >EN savoir plus</a>
+                        </button>
+                       
                 </div>
            
             </div>
@@ -278,6 +271,7 @@
             </div>
             <!-- Add more product items as needed -->
         </div>
+    </div>
         <div class="navigation">
             <a href="#">
                 <div class="arrow arrow-right">
