@@ -227,34 +227,52 @@ header .login{
 
     }
 
-    .chiffres {
-        display: flex;
-        margin-top: 57vh;
-        width: 90%;
-        background: url('chiffres1.jpg');
-        background-size:cover; 
-        background-position:center; 
-        justify-content: center;
-        height: 500px;
-        gap: 20px;
-        border-radius: 5%;
-    }
 
-
-
-    
     .ChiffresHead{
         margin-top: 7%;
         display: flex;
         justify-content:center;
         background-color: rgba(0, 0, 0,0.3);
-        width: 90%;
+        border: yellow;
+        border-style: solid;
+        border-width: 2px;
+        border-left: #CCDB19;
+        border-right: #CCDB19;
     
         font-family: poppins;
         font-size:5vh;
         color: #FFFFFF;
-        padding:7vh ;
+        padding: 2vh ;
         
+    }
+
+
+    .chiffres {
+        width: 1100px;
+        background-size:cover; 
+        background-position:center;
+        height: 480px;
+        margin-left: 60px;
+        border-radius: 15px;
+        
+    }
+
+
+    .chiffres {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+       
+    }
+    .dd{
+    display: flex;
+    align-items: center;
+    justify-content:  space-around;
+    text-align: center;
+    padding: 100px;
+    gap: 60px;
+    
     }
 
 
