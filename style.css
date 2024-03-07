@@ -14,9 +14,11 @@ body{
 } 
 header {
     display: flex;
-    justify-content:space-between;
+    
+    justify-content:space-around;
+
     align-items: center;
-    padding: 10px 50px;
+    ;
  
     text-decoration: none;
         
@@ -26,10 +28,48 @@ header .login{
     display:flex;
     flex-direction: line;
     align-items: center;
+    gap:10px;
 }
-    a{
+    a{ 
         text-decoration: none;
         color: #FFFFFF;
-        margin: 10px 10px;
+       
         
     }
+    .menu{display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;}
+    .home{
+        display:flex;
+        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigate{
+        display:flex; 
+        flex-direction: column;
+        width:60px;
+    }
+    .home .textH{
+        
+       
+    }
+
+    .home .textH >h1{
+        color: #ccdb19;
+        font-size: 49px;
+    }
+    .home .textH >h2{
+        color: #ffffff;
+        font-size: 39px;
+    }
+    .home .textH .savoir{
+        margin-top: 30px;
+        background-color: #ccdb19;
+        border:none;
+        border-radius:3px;
+        font-size: 13px;
+        padding: 7px;
+    }
+    
