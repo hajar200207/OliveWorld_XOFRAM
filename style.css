@@ -36,19 +36,19 @@ header .login{
     }
 .div1{
     width: 100%;
-    background-color: rgb(76, 76, 90);
-
+    background-color: rgba(0, 224, 0, 0.5);
     display: flex;
     align-items: center;
     flex-direction: column;
     color: white;
     border-top-width:2px ;
-    border-top-color:white ;
+    border-top-color: gold;
     border-top-style: outset;
     border-bottom-width:4px ;
-    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-color: white;
     border-bottom-style: outset;
 }
+
 .flex-container{
 display: flex;
 flex-direction: row;
@@ -68,18 +68,34 @@ justify-content:space-around;
     width: 354px;
     height: 40px;
     background-color: ghostwhite;
+    border: 1px;
+    border-color: gold;
+    border-style: solid;
+    border-radius: 7px;
 
 
 }
 #in2{
   height: 133px;
-  
+  border: 3px;
+  border-color: rgb(66, 223, 66);
+  border-style: solid;
+  border-radius: 7px;
 }
 #in3{
     height: 34px;
     background-color: green;
-    margin-left: 30p
-
+    border: 1px;
+    border-color: rgb(226, 207, 100);
+    border-style: solid;
+    border-radius: 7px;
+;}
+#in3:hover{
+    height: 34px;
+    background-color: gold;
+    border-radius: 12px;
+    color: #FFFFFF;
+    
 ;}
 .flex-div2{
     
@@ -88,6 +104,9 @@ justify-content:space-around;
     border-radius: 12px;
     background-color: rgba(0, rgb(56, 58, 56), 0, 0.3);
     opacity: 0.3;
+    border-color: gold;
+    border-style: solid;
+    border-radius: 7px;
    
     
 }
@@ -100,6 +119,9 @@ justify-content:space-around;
     padding-left: 57px;
     border-radius: 11px;
     color: #FFFFFF;
+    border-color: gold;
+    border-style: solid;
+    border-radius: 7px;
    
 }
 .flex-div03{
