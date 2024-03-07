@@ -19,46 +19,71 @@ header {
     padding: 10px 50px;
     text-decoration: none;
     }
+.title{
+    background-image:url("istockphoto-1473304288-612x612.jpg");
+    width: 100%;
+    text-align: center;
+    height: 30%; 
+    align-items: center;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2%;
+}  
+.title>p{
+    color:white;
+    font-size: 100%;
+    
+}
+.title>h1{
+    margin: 0 0 15px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
 .services{ 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     justify-content: left;
     align-items: center;
-    margin: 5px;
+   
 }
 .services1{ 
-    column-count: 2;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    justify-content: right;
-    align-items: center;
-    margin: 5px;
-}
-
-#service2{
-    column-count: 2;
-    
-    padding: 10px;
-    align-items: left;
     justify-content: center;
-    text-align: left;
+    align-items: center;
 }
-#service2>h1{
+.s1{
+    width: 50%;
+}
+#service2{
+    display: flex;
+    align-items:top;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+}
+.s1>h1{
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 18px;
     color: #FFFFFF;
+    text-decoration: underline;
 }
 #service2 img{
     padding: 10px;
     width: 300px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
-#service2 p{
-    font-family: sans-serif;
-    font-size: medium;
+.menu{
+    margin: 30px;
+}
+.s1 p{
+    justify-content: center;
     color: #a3b008;
-    font-size: 20px;
+    width: 240px;
 }
 
 header .login{
