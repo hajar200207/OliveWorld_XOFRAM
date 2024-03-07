@@ -5,251 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-
-    <style>
-        .slider-container {
-            position: relative;
-            overflow: hidden;
-            width: 80%;
-            margin: 50px auto;
-
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-
-        }
-
-     
-
-        .arrow {
-            display: flex;
-            position: absolute;
-            top: 170%;
-            transform: translateY(-50%);
-            font-size: 24px;
-            cursor: pointer;
-            color: #fdfef7;
-        }
-
-        .arrow-left {
-            left: 10px;
-        }
-
-        .arrow-right {
-            right: 10px;
-        }
-
-      
-
-        .custom-dropdown {
-            display: flex;
-            position: relative;
-            display: inline-block;
-            background-color:white;
-            color: white;
-            padding: 5px 25px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border: none;
-            padding-right: 30px;
-            margin-left: 80%;
-            border-radius: 3px;
-           border: 1px solid #FFD700;
-            width: 202PX;
-           
-        }
-
-        .dropdown-icon {
-            position: absolute;
-            top: 50%;
-            left: 10px;
-            transform: translateY(-50%);
-            font-size: 16px;
-            color: #000;
-        }
-
-        
-
-        .product {
-            background:rgba(163, 176, 8, 0.6);
-            border-radius: 7px;
-            border: 2px solid #FFD700;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: left;
-            gap: 20px;
-            flex: 0 0 100%;
-            box-sizing: border-box;
-            padding: 50px;
-            
-    
-            
-        }
-
-        .product img {
-            width: 200px;
-            height: 200px;
-        }
-
-        .navigation {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .arrow {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #fff;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
-            transition: all 0.2s ease-in-out;
-
-           
-        }
-
-        .arrow svg {
-            margin: auto;
-        }
-
-        .arrow-left svg {
-            /* transform: rotate(-180deg); */
-        }
-
-        .arrow-right svg {
-            /* transform: rotate(-180deg); */
-        }
-
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-
-        * {
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-            text-decoration: none;
-            font-family: "Poppins", sans-serif;
-
-        }
-
-        body {
-            width: 100%;
-            height: auto;
-            background-image: url("Untitled design.png");
-
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 50px;
-
-            text-decoration: none;
-
-        }
-
-        header .login {
-            display: flex;
-            flex-direction: line;
-            align-items: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: #FFFFFF;
-            margin: 10px 10px;
-        }
-
-        .texte-container {
-            padding: 10px;
-        }
-
-        h2 {
-            margin-top: 0;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
-        
-        .ff{
-            background-color: #353909;
-            opacity: 70%;
-            border:none ; 
-            padding: 7px;
-            gap: 20px;
-            border-radius: 7px;
-            border: 2px solid #FFD700;
-        }
-       
-        .ff:hover {background-color:#CCDB19;}
-        .f{
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-        }
-        h1 {
-        text-align: center;
-         padding: 20px;
-        color: #ddd;
-}
-
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 80%;
-}
-
-.product1 {
-  margin: 10px;
-  text-align: center;
-  padding: 20px;
-  width: 25%;
-  
-}
-
-.product1 img {
-  width: 100%;
-}
-
-.product1 h3,
-.product1 p {
-  margin: 5px 0;
-}
-
-.product1 a {
-  display: block;
-  background-color:#353909;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 7px;
-    border: 2px solid #FFD700;
-}
-
-.product1 a:hover {
-  background-color: #FFD700;
-  border-radius: 7px;
-    border: 2px solid #FFD700;
-}
-
-.peu{
-    border: 1px solid #ddd;
-    border-radius: 7px;
-    border: 2px solid #FFD700;
-
-}
-
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
 
@@ -338,9 +94,7 @@
                 <p style="color: #CCDB19;">Description for tous les produits </p>
                 <p style="color: #CCDB19;">There are three categories  oils zitouns and ovils </p><br>
                 <h1 style="color: #fff;">Welcome to xofram company</h1><br>
-                <dix class="f">
                 
-                </dix>
             </div>
         </div>
         <!--  additional products for "Huiles cosmétiques" -->
@@ -361,9 +115,9 @@
         <div class="product">
             <img src="images\Huiles cosmétiques\2.png" alt="Product 2">
             <div class="product-info">
-                <p style="color: #CCDB19;">Description for Product 1</p>
-                <p style="color: #CCDB19;">Description for Product 1</p><br>
-                <h1 style="color: #fff;">Huile d'Olive Extra Vierge</h1><br>
+                <p style="color: #CCDB19;  text-align: left;">Description for Product 1</p>
+                <p style="color: #CCDB19;  text-align: left;">Description for Product 1</p><br>
+                <h1 style="color: #fff; text-align: left;">Huile d'Olive Extra Vierge</h1><br>
                 <button class="ff">
                     <a href="#">commander</a>
                 </button>
@@ -379,7 +133,7 @@
             <div class="product-info">
                 <p style="color: #CCDB19;">additional products for olive</p>
                 <p style="color: #CCDB19;">additional products for "olive</p><br>
-                <h1 style="color: #fff;">additional products for "olive</h1><br>
+                <h1 style="color: #fff;">additional products for olive</h1> <br>
                 <button class="ff">
                     <a href="#">commander</a>
                 </button>
@@ -393,7 +147,7 @@
             <div class="product-info">
                 <p style="color: #CCDB19;">additional products for "olive</p>
                 <p style="color: #CCDB19;">additional products for "olive</p><br>
-                <h1 style="color: #fff;">additional products for "olive/h1><br>
+                <h1 style="color: #fff;">additional products for "olive> </h1><br>
                     <button class="ff">
                         <a href="#">commander</a>
                     </button>
@@ -437,7 +191,7 @@
 </div>
 
         <div class="navigation">
-            <a href="#">
+          
                 <div class="arrow arrow-right">
                     <svg fill="" viewBox="-102.4 -102.4 1228.80 1228.80" xmlns="http://www.w3.org/2000/svg" stroke=""
                         transform="rotate(180)">
@@ -453,7 +207,7 @@
 
                 </div>
             </a>
-            <a href="#">
+           
                 <div class="arrow arrow-left">
                     <svg fill="#000000" viewBox="-102.4 -102.4 1228.80 1228.80" xmlns="http://www.w3.org/2000/svg"
                         transform="rotate(0)">
