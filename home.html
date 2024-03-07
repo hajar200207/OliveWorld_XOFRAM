@@ -12,18 +12,21 @@
             overflow: hidden;
             width: 80%;
             margin: 50px auto;
+
         }
 
         .slider {
             display: flex;
             transition: transform 0.5s ease-in-out;
+
         }
 
      
 
         .arrow {
+            display: flex;
             position: absolute;
-            top: 50%;
+            top: 170%;
             transform: translateY(-50%);
             font-size: 24px;
             cursor: pointer;
@@ -41,6 +44,7 @@
       
 
         .custom-dropdown {
+            display: flex;
             position: relative;
             display: inline-block;
             background-color:white;
@@ -48,7 +52,6 @@
             padding: 5px 25px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
             font-size: 16px;
             margin: 4px 2px;
             cursor: pointer;
@@ -70,25 +73,7 @@
             color: #000;
         }
 
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            z-index: 1;
-        }
-
-        .custom-dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        .dropdown-menu-item {
-            padding: 10px;
-            cursor: pointer;
-        }
-
-
-      
+        
 
         .product {
             background:rgba(163, 176, 8, 0.6);
@@ -210,7 +195,59 @@
             flex-direction: row;
             gap: 20px;
         }
-    
+        h1 {
+        text-align: center;
+         padding: 20px;
+        color: #ddd;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.product1 {
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 25%;
+  
+}
+
+.product1 img {
+  width: 100%;
+}
+
+.product1 h3,
+.product1 p {
+  margin: 5px 0;
+}
+
+.product1 a {
+  display: block;
+  background-color:#353909;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 7px;
+    border: 2px solid #FFD700;
+}
+
+.product1 a:hover {
+  background-color: #FFD700;
+  border-radius: 7px;
+    border: 2px solid #FFD700;
+}
+
+.peu{
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    border: 2px solid #FFD700;
+
+}
 
     </style>
     <title>Home</title>
@@ -233,19 +270,50 @@
             <img src="search-icon-65e1b58b93ff3799741027.png" alt="oxfam" style="width: 16px; height:16px ;">
         </div>
     </header>
-
+    <h1>Top Selling Products</h1>
+    <div class="product-container">
+    
+ 
+    <div class="product1">
+        <div  class=" peu">
+            <img src="Plant-based Products Presentation  Presentation.png" alt="Olive oil bottle" height="300px" >
+        </div>
+      <h3 style="color: #fdfef7;">OLIVIA 100ml</h3>
+      <p style="color: #fdfef7;">huile cosmetique bio</p>
+      <p style="color: #fdfef7;"></p>
+      <a href="#" style="color: #fdfef7;">Shop Now</a>
+        </div>
+    <div class="product1">
+        <div  class=" peu">
+            <img src="oil.webp"  height="300px" >
+        </div>
+      <h3 style="color: #fdfef7;">OLIVE OIL</h3>
+      <p style="color: #fdfef7;">oil bio</p>
+      <p style="color: #fdfef7;"></p>
+      <a href="#" style="color: #fdfef7;">Shop Now</a>
+    </div>
+     
+    <div class="product1">
+        <div  class=" peu">
+            <img src="oliven.webp" alt="Olive oil bottle " height="300px"> 
+        </div>
+        <h3 style="color: #fdfef7;">OLIVEN OLIVE</h3>
+        <p style="color: #fdfef7;"> olive BIO</p>
+        <p style="color: #fdfef7;"></p>
+        <a href="#" style="color: #fdfef7;">Shop Now</a>
+      </div>
+      
+    </div>
+ 
+    
     <div class="custom-dropdown">
         <span class="dropdown-icon"><i class="fa fa-bars"></i></i></span>
         <div  class ="f">
           
         <select  id="cars" name="cars" style="border: none;color: #a3b008;font-size: 20px; " > 
-         
-            <option  value="1" style="color: #a3b008;font-size: 20px;"> CATEGORIE</option>
+            <option  value="1" style="color: #a3b008;font-size: 20px;"> categories</option>
             <option  value="huiles" style="color: #a3b008 ;font-size: 20px; "> Huiles produit 1</option>
-            <option  value="huiles" style="color: #a3b008;font-size: 20px;">Huiles produit 2</option>
             <option  value="olive" style="color: #a3b008;font-size: 20px;"> olive produit 1</option>
-            <option  value="olive" style="color: #a3b008;font-size: 20px;">olive produit 2 </option>
-            <option  value="zitoun" style="color: #a3b008;font-size: 20px;"> zitoun produit 1</option>
             <option  value="zitoun" style="color: #a3b008;font-size: 20px;"> zitoun produit 2</option>
             <!-- Add more options as needed -->
 
@@ -255,6 +323,16 @@
     <div class="scs"></div>
 <div class="slider-container">
     <div class="slider" id="productSlider">
+        <div class="product">
+            <div class="product-info">
+                <p style="color: #CCDB19;">Description for tous les produits </p>
+                <p style="color: #CCDB19;">There are three categories  oils zitouns and ovils </p><br>
+                <h1 style="color: #fff;">Welcome to xofram company</h1><br>
+                <dix class="f">
+                
+                </dix>
+            </div>
+        </div>
         <div class="product">
             <div class="product-info">
                 <p style="color: #CCDB19;">Description for tous les produits </p>
@@ -431,7 +509,7 @@ arrowRight.addEventListener('click', () => {
 
 // Event listener for car selection
 selectCars.addEventListener('change', () => {
-    currentIndex = selectCars.selectedIndex;
+    currentIndex = selectCars.selectedIndex * 2;
     updateSlider();
     stopSlider(); // Stop the automatic slider when car is selected
 });
@@ -444,6 +522,7 @@ function updateSlider() {
 
 // Start the automatic slider
 startSlider();
+
 
 
     </script>
