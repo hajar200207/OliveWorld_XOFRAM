@@ -100,8 +100,7 @@ header .login{
         
         display:flex;
         align-items: start;
-        
-    margin-left: 2%;
+        margin-left: 2%;
        
         
         
@@ -183,7 +182,6 @@ header .login{
         
 
     }
-
     .av >.a_venir>h2{
         display: flex;
         justify-content: space-around;
@@ -247,7 +245,12 @@ header .login{
     }
 
 
+
     .chiffres {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
         width: 1100px;
         background-size:cover; 
         background-position:center;
@@ -255,14 +258,6 @@ header .login{
         margin-left: 60px;
         border-radius: 15px;
         
-    }
-
-
-    .chiffres {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: absolute;
        
     }
     .dd{
@@ -272,11 +267,21 @@ header .login{
     text-align: center;
     padding: 100px;
     gap: 60px;
-    
+    font-family: poppins;
+    font-size: 5vh;
     }
 
 
-
+    body::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 10px; 
+        background-color: #CCDB19;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
 
 
    
