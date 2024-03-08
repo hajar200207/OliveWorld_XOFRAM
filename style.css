@@ -2,7 +2,7 @@
 *{
     padding:0px;
     margin:0px;
-    box-sizing:border-box;
+	box-sizing: border-box;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 
@@ -77,19 +77,25 @@ header .login{
     	-moz-box-sizing: border-box;
     	box-sizing: border-box;
     }
+	
+.slider__warpper{
+	display: flex;
+	flex-direction: column;
+	z-index: 0;
+}
+.slider__navi {
+position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	z-index: 2;
+	
 
-    .slider__navi {
-    	position: absolute;
-    	top: 50%;
-    	right: 20px;
-    	transform: translateY(-50%);
-    	-webkit-transform: translateY(-50%);
-    	-moz-transform: translateY(-50%);
-    	-ms-transform: translateY(-50%);
-    	-o-transform: translateY(-50%);
-    	z-index: 999;
-
-    }
+}
 
     .slider__navi a {
     	display: block;
@@ -106,13 +112,13 @@ header .login{
     	background: rgba(255,255,255,1);
     }
 
-    body {
+    /*body {
     	position: relative;
     	font-size: 100%;
     	font-family: 'Montserrat', sans-serif;
     	font-weight: 400;
-    	min-height: 100vh;
-    }
+    	
+    }*/
 
     .flex__container {
     	position: absolute;
@@ -337,3 +343,32 @@ header .login{
     	transform: translate3d(200px,0,0);
     	opacity: 0;
     }
+	.Footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: absolute;
+		border-top:  2px solid gold ;
+		top:690px;
+		bottom: 10px;
+		width: 100%;
+		height: 300px;
+		background-image: url(footercanva.png);*
+		
+		
+	}
+	.Footer .copi{
+		width: 20%;
+		padding-top: 20%;
+		text-align: center;
+		color: yellow;
+	}
+
+
+	.newsletterF{
+		
+		font-size: 1rem;
+		color:white;
+	}
+	
+	
