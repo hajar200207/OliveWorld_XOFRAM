@@ -37,7 +37,6 @@ header .login{
 .div1{
     width: 100%;
     background-color: rgba(18, 235, 76, 0.5);
-    background-image: url('image/oli.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -46,10 +45,10 @@ header .login{
     flex-direction: column;
     color: white;
     border-top-width:2px ;
-    border-top-color: white;
+    border-top-color: goldenrod;
     border-top-style: double;
     border-bottom-width:4px ;
-    border-bottom-color: white;
+    border-bottom-color: goldenrod;
     border-bottom-style: solid;
 }
 #img{
@@ -108,17 +107,6 @@ justify-content:space-around;
     color: #FFFFFF;
     
 ;}
-.flex-div2{
-    
-    
-    background-color: rgba(0,255, 0, 0.1);
-    opacity: 0.3;
-    border-color: white;
-    border-style: solid;
-    border-radius: 7px;
-   
-    
-}
 .flex-div3{
     background-color: rgba(0, 255, 0, 0.1);
     width: 354px;
@@ -127,14 +115,9 @@ justify-content:space-around;
     justify-content: space-around;
     padding-left: 57px;
     border-radius: 11px;
-    color: #FFFFFF;
-    border-color: white;
+    color: #d5f716;
+    border-color: goldenrod;
     border-style: solid;
-    border-radius: 7px;
+    border-radius: 6px;
    
-}
-.flex-div03{
-   display: flex;
-   justify-items:center;
-
 }
