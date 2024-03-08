@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*{
+    padding:0px;
+    margin-left:0px;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:url("bg-65e1b575664af170534291\ \(1\).png");
+} 
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 50px;
+    text-decoration: none;
+    }
+.title{
+    background-image:url("istockphoto-1473304288-612x612.jpg");
+    width: 100%;
+    text-align: center;
+    height: 30%; 
+    align-items: center;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2%;
+}  
+.title>p{
+    color:white;
+    font-size: 100%;
+    
+}
+.title>h1{
+    margin: 0 0 15px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.services{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+   
+}
+.services1{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.s1{
+    width: 50%;
+}
+#service2{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+}
+.s1>h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+#service2 img{
+    padding: 10px;
+    width: 20em;
+    border-radius: 30px;
+}
+.Services-All{
+    margin: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.s1 p{
+    justify-content: center;
+    color: #a3b008;
+    width: 280px;
+}
+
+header .login{
+    display:flex;
+    flex-direction: line;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 10px 10px;
+}
