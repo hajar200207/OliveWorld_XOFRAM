@@ -1,0 +1,36 @@
+[33mcommit d3d1e4c7167ed2c097cb3d174dc36675137520dc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msaid[m[33m, [m[1;31mupstream/said[m[33m)[m
+Author: saidtalfana <saidtalfana1@gmail.com>
+Date:   Fri Mar 8 09:04:10 2024 +0100
+
+    fourth commit
+
+[33mcommit 5eb149431b17e208bc9b07d2cf50eb4be03d28dc[m
+Author: saidtalfana <saidtalfana1@gmail.com>
+Date:   Thu Mar 7 16:53:31 2024 +0100
+
+    third commit
+
+[33mcommit f56c2829bdd5767c3de8b36ef3bc391a58ff15fb[m
+Author: saidtalfana <saidtalfana1@gmail.com>
+Date:   Thu Mar 7 14:19:26 2024 +0100
+
+    second commit
+
+[33mcommit bf3ea6f6a480fee694605d589c3d8d5117a3f1c0[m
+Merge: 3134d03 98fea59
+Author: saidtalfana <saidtalfana1@gmail.com>
+Date:   Thu Mar 7 11:19:38 2024 +0100
+
+    Merge branch 'said' of https://github.com/hajar200207/OliveWorld_XOFRAM into said
+
+[33mcommit 3134d030b9e2e07a5759f872c0258f47827f099b[m[33m ([m[1;32mmaster[m[33m)[m
+Author: saidtalfana <saidtalfana1@gmail.com>
+Date:   Thu Mar 7 10:54:03 2024 +0100
+
+     first commit
+
+[33mcommit 98fea59e49d96dd64a048f5f13fb41de59a5dd62[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/imane[m[33m)[m
+Author: hajar ouadi <158446051+hajar200207@users.noreply.github.com>
+Date:   Tue Mar 5 12:17:22 2024 +0100
+
+    Initial commit
